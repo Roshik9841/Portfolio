@@ -30,8 +30,9 @@ export function Navbar() {
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <a href="#home" className="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-1 group">
-            <span className="text-amber-500 font-extrabold group-hover:scale-110 transition-transform">R</span>M<span className="text-slate-400">.</span>
+          <a href="#home" className="text-xl font-bold  text-slate-900 dark:text-white flex items-center gap-1 group">
+            <span className="text-amber-500 font-extrabold group-hover:scale-110 transition-transform">R</span>M
+            <span className="text-slate-400">.</span>
           </a>
 
           {/* Desktop Nav */}
@@ -40,7 +41,8 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-500 transition-colors"
+                className="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-amber-600
+                 dark:hover:text-amber-500 transition-colors"
               >
                 {link.name}
               </a>
@@ -78,7 +80,9 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-3 text-base font-medium text-slate-600 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-500 hover:bg-slate-50 dark:hover:bg-slate-900 rounded-md transition-colors"
+                  className="block px-3 py-3 text-base font-medium text-slate-600 dark:text-slate-400
+                   hover:text-amber-600 dark:hover:text-amber-500 hover:bg-slate-50 dark:hover:bg-slate-900
+                    rounded-md transition-colors"
                 >
                   {link.name}
                 </a>
