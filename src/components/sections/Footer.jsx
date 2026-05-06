@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { Code, User, Mail, Heart } from "lucide-react";
+import Github from "../ui/Github";
+import Linkedin from "../ui/Linkedin";
 
 export function Footer() {
   return (
@@ -20,7 +22,7 @@ export function Footer() {
             <span className="text-amber-500 font-extrabold">R</span>M
             <span className="text-slate-400">.</span>
           </a>
-          <span className="text-slate-900 dark:text-slate-400">
+          <span className="text-slate-500 dark:text-slate-400">
             +977 9843225292
           </span>
           <p className="text-slate-500 dark:text-slate-400 text-sm mt-2">
@@ -40,14 +42,14 @@ export function Footer() {
             className="text-slate-400 hover:text-amber-600 dark:hover:text-amber-500 transition-colors"
           >
         
-            <Code size={20} />
+            <Github size={20} />
           </a>
           <a
             href="https://www.linkedin.com/in/roshik9841/"
             className="text-slate-400 hover:text-amber-600 dark:hover:text-amber-500 transition-colors"
           >
            
-            <User size={20} />
+            <Linkedin size={20} />
           </a>
           <a
             href="mailto:Roshik9841@gmail.com"

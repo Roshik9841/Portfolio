@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { Code, User, Mail, Download, ArrowRight } from "lucide-react";
+import {  Mail, Download, ArrowRight } from "lucide-react";
+import Github from "../ui/Github";
+import Linkedin from "../ui/Linkedin";
 
 export function Hero() {
   const containerVariants = {
@@ -93,17 +95,17 @@ export function Hero() {
           <motion.div variants={itemVariants} className="mt-16 flex gap-6">
             <SocialLink
               href="https://github.com/Roshik9841"
-              icon={<Code />}
+              icon={<Github size={24} />}
               
             />
             <SocialLink
               href="https://www.linkedin.com/in/roshik9841/"
-              icon={<User />}
+              icon={<Linkedin size={24}/>}
       
             />
             <SocialLink
               href="mailto:roshik9841@gmail.com"
-              icon={<Mail />}
+              icon={<Mail size={24} />}
            
             />
           </motion.div>
@@ -123,7 +125,7 @@ function SocialLink({ href, icon }) {
        rounded-md text-slate-500 hover:text-amber-600 dark:text-slate-400 dark:hover:text-amber-500
         hover:border-amber-200 dark:hover:border-amber-800 transition-all hover:-translate-y-1 hover:shadow-md"
     >
-      {icon}
+     {icon}
     </a>
   );
 }
