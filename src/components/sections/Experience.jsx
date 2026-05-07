@@ -43,7 +43,7 @@ export function Experience() {
                   <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-blue-500"></span>
                     <a
-                      href="/Internship_Certificate.pdf"
+                      href="/Internshipcompletion.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline"

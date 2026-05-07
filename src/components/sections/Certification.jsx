@@ -130,7 +130,7 @@ export const Certification = () => {
           onClick={() => setSelectedItem(null)}
         >
           <div
-            className="relative max-w-2xl w-full"
+            className="relative max-w-2xl w-fit"
             onClick={(e) => e.stopPropagation()}
           >
             <button
