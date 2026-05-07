@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
 import { SectionHeading } from "../ui/SectionHeading";
+import { useState } from "react";
+import hackathon from "../../assets/hackathon.jpg";
+import python from "../../assets/python.png";
+import ReactImg from "../../assets/react.png";
+import Toeffl from "../../assets/Toeffl.jpg";
 
 const skillCategories = [
   {
@@ -37,7 +42,31 @@ const skillCategories = [
   },
 ];
 
+const certifications = [
+  {
+    id: 1,
+    src: ReactImg,
+    alt: "React Certification",
+  },
+  {
+    id: 2,
+    src: hackathon,
+    alt: "Hackathon ",
+  },
+  {
+    id: 3,
+    src: python,
+    alt: "Python Certification",
+  },
+  {
+    id: 4,
+    src: Toeffl,
+    alt: "Toefl Certification",
+  },
+];
+
 export function Skills() {
+  const [selectedItem, setSelectedItem] = useState(null);
   return (
     <section id="skills" className="py-24 bg-slate-50 dark:bg-slate-950">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,33 +117,62 @@ export function Skills() {
             <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
             Certifications
           </h3>
-          <div className=" space-y-3 text-slate-600 dark:text-slate-400">
-            <a
-              href="https://drive.google.com/file/d/12iCMhGeiD22CctDuTih5xP0jlxVBp0s4/view?usp=drive_link"
-              className="flex items-center gap-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4   
-                rounded-lg w-full max-w-md transition hover:shadow-md hover:-translate-y-1"
-            >
-              <span className="font-medium text-slate-800 dark:text-slate-200 flex-1">
-                Joy of React
-              </span>
-              <span className="text-sm text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
-                June 2025
-              </span>
-            </a>
+          <div className="  text-slate-600 dark:text-slate-400 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-4">
+            {certifications.map((cert) => (
+              <div key={cert.id} className="w-full">
+                <a
+                  href={cert.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group "
+                >
+                  <div
+                    className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-slate-200 dark:border-slate-800  cursor-pointer
+                   shadow-sm transition-all hover:shadow-xl"
+                    onClick={() => setSelectedItem(cert)}
+                  >
+                    <img
+                      src={cert.src}
+                      alt={cert.alt}
+                      className="h-61 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
 
-            <a
-              href="https://drive.google.com/file/d/1SIGCw9O9QGeU3vrzNLXhL_eroIiFMmWW/view?usp=drive_link"
-              className="flex items-center gap-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4
-              rounded-lg w-full max-w-md transition hover:shadow-md hover:-translate-y-1"
-            >
-              <span className="font-medium text-slate-800 dark:text-slate-200 flex-1">
-                Hackaverse
-              </span>
-              <span className="text-sm text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
-                June 2025
-              </span>
-            </a>
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors" />
+                  </div>
+                  <p className="mt-3 text-sm font-medium text-slate-600 dark:text-slate-400 text-center">
+                    {cert.alt}
+                  </p>
+                </a>
+              </div>
+            ))}
           </div>
+
+          {selectedItem && (
+            <div
+              className="fixed inset-0 z-50 flex items-center justify-center  backdrop-blur cursor-pointer"
+              onClick={() => setSelectedItem(null)}
+            >
+              <div
+                className="relative max-w-2xl w-full"
+                onClick={(e) => e.stopPropagation()}
+              >
+            
+                <button
+                  className="absolute -top-12 right-0 text-white text-3xl p-2 hover:text-amber-500 transition-colors"
+                  onClick={() => setSelectedItem(null)}
+                >
+                  ✕
+                </button>
+
+                <img
+                  src={selectedItem.src} // Now this will work because selectedItem is the object
+                  alt={selectedItem.alt}
+                  className="max-h-[90vh] w-full object-contain rounded-lg shadow-2xl bg-white"
+                />
+               
+              </div>
+            </div>
+          )}
         </motion.div>
       </div>
     </section>
