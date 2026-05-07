@@ -38,9 +38,7 @@ const skillCategories = [
   },
 ];
 
-
 export function Skills() {
-
   return (
     <section id="skills" className="py-24 bg-slate-50 dark:bg-slate-950">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -79,9 +77,8 @@ export function Skills() {
           ))}
         </div>
 
-          {/* Certification Section */}
-          <Certification />
-        
+        {/* Certification Section */}
+        <Certification />
       </div>
     </section>
   );
