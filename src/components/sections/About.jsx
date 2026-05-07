@@ -32,7 +32,7 @@ export function About() {
               Whether it's designing a seamless user interface with React and Tailwind CSS or building scalable APIs with Node.js and NestJS, I care deeply about creating experiences that are both beautiful and functionally sound.
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-slate-200 dark:border-slate-700">
+            <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 pt-8 border-t border-slate-200 dark:border-slate-700">
               <div>
                 <span className="block text-base font-semibold text-slate-900 dark:text-white mb-1">Location</span>
                 <span className="text-base">Kathmandu, Nepal</span>

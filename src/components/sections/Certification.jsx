@@ -72,7 +72,7 @@ export const Certification = () => {
         Certifications
       </h3>
 
-      <div className="hidden lg:flex lg:flex-wrap gap-x-12 gap-y-6 text-xl font-bold pb-4">
+      <div className="flex lg:flex lg:flex-wrap gap-x-12 gap-y-6 text-xl font-bold pb-4">
         {certifications.map((cert, index) => (
           <button
             key={index}
