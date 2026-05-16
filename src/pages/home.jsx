@@ -14,9 +14,10 @@ export function Home() {
       <main>
         <Hero />
         <About />
-        <Skills />
         <Experience />
         <Projects />
+        <Skills />
+        
         <Contact />
       </main>
       <Footer />
