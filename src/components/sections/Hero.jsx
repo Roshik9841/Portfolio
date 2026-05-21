@@ -62,9 +62,8 @@ export function Hero() {
             variants={itemVariants}
             className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-10 text-balance leading-relaxed"
           >
-            I'm a BCA student and full-stack developer from Kathmandu. I love
-            building clean interfaces and robust backends using React and
-            Node.js.
+            I build responsive and interactive web applications using React, JavaScript, 
+            and modern frontend technologies while also exploring QA Automation with Playwright for end-to-end testing and quality assurance.
           </motion.p>
 
           <motion.div

@@ -15,6 +15,17 @@ const skillCategories = [
     ],
   },
   {
+    title: "QA Automation",
+    skills:[
+      "Playwright",
+      "Postman",
+      "API Testing",
+      "Manual Testing",
+      "End-to-End Testing",
+      "Javascript for Automation",
+  ],
+  },
+  {
     title: "Backend",
     skills: [
       "Node.js",
