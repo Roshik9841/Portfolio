@@ -7,6 +7,7 @@ import GD from "../../assets/GD.jpg";
 import gis from "../../assets/gis.jpg";
 import ict from "../../assets/ict.jpg";
 import { CircleArrowRight } from "lucide-react";
+import Playwright from "../../assets/playwright.jpg";
 import { motion } from "framer-motion";
 
 const certifications = [
@@ -14,22 +15,27 @@ const certifications = [
     title: "Technical",
     content: [
       {
-        id: 1,
+        id:1,
+        src: Playwright,
+        alt: "Playwright Certification",
+      },
+      {
+        id: 2,
         src: ReactImg,
         alt: "React Certification",
       },
       {
-        id: 2,
+        id: 3,
         src: hackathon,
         alt: "Hackathon ",
       },
       {
-        id: 3,
+        id: 4,
         src: python,
         alt: "Python Certification",
       },
       {
-        id: 4,
+        id: 5,
         src: Toeffl,
         alt: "Toefl Certification",
       },
