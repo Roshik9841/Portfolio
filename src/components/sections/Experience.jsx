@@ -3,6 +3,19 @@ import { SectionHeading } from "../ui/SectionHeading";
 
 export function Experience() {
   const experiences = [
+     {
+      role: "Quality Assurance Intern",
+      company: "Iniziova Software Solutions",
+      date: "May 2025 – Present",
+      points: [
+        "Tested and validated features of a School Management System application",
+        "Created and executed manual test cases and reported bugs.",
+        "Performed regression and retesting to verify issue fixes",
+        "Used Playwright and JavaScript to automate selected test scenarios.",
+        "Collaborated with developers to improve application quality and reliability.",
+        "Identified, documented, and reported defects using clear bug descriptions and reproduction steps"
+      ],
+    },
     {
       role: "Full Stack Intern",
       company: "Fusemachines",

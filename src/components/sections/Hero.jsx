@@ -82,7 +82,7 @@ export function Hero() {
               />
             </a>
             <a
-              href="/resume.pdf"
+              href="/RoshikQaCV.pdf"
               download
               className="px-6 py-3 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-amber-500 dark:hover:border-amber-500 font-medium flex items-center gap-2 transition-colors text-slate-700 dark:text-slate-300 hover:text-amber-600 dark:hover:text-amber-400 shadow-sm"
             >
