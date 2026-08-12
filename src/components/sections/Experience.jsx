@@ -6,6 +6,7 @@ export function Experience() {
      {
       role: "Quality Assurance Intern",
       company: "Iniziova Software Solutions",
+      hrefs:"QA_intern certificate.pdf",
       date: "May 2025 – Present",
       points: [
         "Tested and validated features of a School Management System application",
@@ -19,6 +20,7 @@ export function Experience() {
     {
       role: "Full Stack Intern",
       company: "Fusemachines",
+      hrefs:"Internshipcompletion.pdf",
       date: "Dec 2025 – Mar 2026",
       points: [
         "Architected and implemented a responsive Learning Management System (LMS) using React, TypeScript, and Tailwind CSS. Established a consistent design system using CSS tokens for improved maintainability.",
@@ -56,7 +58,7 @@ export function Experience() {
                   <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
                     <span className="w-2 h-2 rounded-full bg-blue-500"></span>
                     <a
-                      href="/Internshipcompletion.pdf"
+                      href={exp.hrefs}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-500 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300 underline"
